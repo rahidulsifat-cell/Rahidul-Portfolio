@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rahidul Alam | UI/UX Designer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/d5336f3223.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 left-0 w-full z-50 px-16 py-8 flex justify-between items-center">
+  <h1 class="text-3xl font-bold">Portfolio.</h1>
+  <ul class="hidden md:flex space-x-12 text-lg">
+    <li>Home</li>
+    <li>About Me</li>
+    <li>Projects</li>
+    <li>Education</li>
+    <li>Blogs</li>
+    <li>Contact</li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="min-h-screen flex items-center px-16 pt-32">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full">
+    <div>
+      <h3 class="text-3xl font-semibold mb-2">Hello It's Me</h3>
+      <h1 class="text-7xl font-extrabold leading-tight">Rahidul Alam</h1>
+      <h2 class="text-3xl mt-2">
+        And I'm a <span class="text-[#00f2ff] text-glow">UI/UX Designer</span>
+      </h2>
+
+      <!-- SOCIAL + CV -->
+      <div class="flex items-center gap-8 mt-12">
+        <div class="flex gap-4">
+          <div class="w-12 h-12 border-2 border-cyan-400 rounded-full flex items-center justify-center">
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
+          <div class="w-12 h-12 border-2 border-cyan-400 rounded-full flex items-center justify-center">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+          <div class="w-12 h-12 border-2 border-cyan-400 rounded-full flex items-center justify-center">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="w-12 h-12 border-2 border-cyan-400 rounded-full flex items-center justify-center">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+
+        <!-- DOWNLOAD CV -->
+        <a
+          href="https://drive.google.com/file/d/1XdO4VDJ-82wW-FAbEo7NQN3O7HVe-sMS/view?usp=sharing"
+          target="_blank"
+          class="px-10 py-4 bg-cyan-400 text-black font-bold rounded-xl shadow-lg"
+        >
+          Download CV
+        </a>
+      </div>
+    </div>
+
+    <div class="flex justify-center">
+      <div class="relative w-[420px] h-[420px]">
+        <div class="absolute inset-0 bg-cyan-400 blur-[60px] opacity-40 rounded-full"></div>
+        <img
+          src="https://i.ibb.co.com/4r13RRf/IMG-0233.png"
+          class="relative rounded-full w-full h-full object-cover"
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="py-32 px-16">
+  <h2 class="text-5xl font-bold mb-10">About Me</h2>
+  <p class="max-w-3xl text-gray-400 text-lg leading-relaxed">
+    I am a passionate UI/UX Designer focused on creating visually appealing,
+    user-centered, and modern digital experiences.
+  </p>
+</section>
+
+<!-- PROJECTS -->
+<section class="py-32 px-16">
+  <h2 class="text-5xl font-bold mb-16">Projects</h2>
+  <div class="grid md:grid-cols-3 gap-10">
+    <div class="card p-8 rounded-2xl">Dashboard UI Design</div>
+    <div class="card p-8 rounded-2xl">Mobile App UX</div>
+    <div class="card p-8 rounded-2xl">Website Redesign</div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="py-32 px-16">
+  <h2 class="text-5xl font-bold mb-16">Education</h2>
+  <div class="space-y-6 max-w-3xl">
+    <div class="card p-6 rounded-xl">International Islamic University(Bsc in Cse)-(Running)</div>
+    <div class="card p-6 rounded-xl">Hajera Taju Degree College(HSC) – GPA 5.00 (2022)</div>
+    <div class="card p-6 rounded-xl">CMP School & College(SSC) – GPA 4.70 (2020)</div>
+  </div>
+</section>
+
+<!-- BLOGS -->
+<section class="py-32 px-16">
+  <h2 class="text-5xl font-bold mb-16">Blogs</h2>
+  <div class="grid md:grid-cols-3 gap-10">
+    <div class="card p-6 rounded-xl">UI Trends 2024</div>
+    <div class="card p-6 rounded-xl">UX Case Study Basics</div>
+    <div class="card p-6 rounded-xl">Design Systems</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="py-32 px-16">
+  <h2 class="text-5xl font-bold mb-10">Contact</h2>
+  <div class="grid md:grid-cols-2 gap-16">
+
+    <div>
+      <p>Email: Sifatchy142@gmail.com</p>
+      <p>Phone: +8801856186942</p>
+    </div>
+
+    <!-- FORM -->
+    <form id="contactForm" class="card p-8 rounded-2xl space-y-4">
+      <input name="name" placeholder="Full Name" class="w-full p-4 rounded bg-gray-800" required>
+      <input name="email" placeholder="Email" class="w-full p-4 rounded bg-gray-800" required>
+      <textarea name="message" placeholder="Message" class="w-full p-4 rounded bg-gray-800 h-32" required></textarea>
+      <button class="w-full bg-cyan-400 text-black font-bold py-3 rounded-xl">
+        Send Message
+      </button>
+      <p id="status" class="text-sm mt-2"></p>
+    </form>
+
+  </div>
+</section>
+
+<footer class="py-12 text-center text-gray-500">
+  © 2026 Rahidul Alam. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

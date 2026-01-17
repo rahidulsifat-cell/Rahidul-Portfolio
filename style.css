@@ -1,0 +1,15 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0b0e14;
+  color: white;
+}
+
+.text-glow {
+  text-shadow: 0 0 12px rgba(0,242,255,.6);
+}
+
+.card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(14px);
+}
