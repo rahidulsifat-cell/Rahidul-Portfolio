@@ -50,4 +50,9 @@ https://www.figma.com/proto/wmhzBcVCC9ZlXMZr5XEXvY/Untitled?node-id=1-2&starting
 ---
 
 ## Project Structure
+Rahidul-Portfolio/
+├── index.html
+├── style.css
+├── script.js
+└── README.md
 
